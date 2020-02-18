@@ -1,0 +1,643 @@
+/* 노멀라이즈 */
+body,
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+/* 라이브러리 */
+.con {
+    margin: 0 auto;
+}
+
+
+
+/* 오렌지 메뉴 */
+
+.con {
+    width: 900px;
+}
+
+.menu-box-1j > ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.menu-box-1j > ul {
+    background-color: orange;
+    text-align: center;
+}
+
+.menu-box-1j > ul > li {
+    float: left;
+    width: 20%;
+}
+
+.menu-box-1j > ul > li > a {
+    color: black;
+    font-weight: bold;
+    padding: 25px;
+    display: block;
+}
+
+.menu-box-1j > ul > li:hover > a {
+    color: whitesmoke;
+}
+
+/* 일정 타이틀 */
+
+h1 {
+    text-align: center;
+    margin: 60px;
+}
+
+/* 간이일정 배경 */
+
+.schedule > .date-map > .img-box {
+    text-align: center;
+}
+
+
+.schedule > .date-map > .img-box > img {
+    width: 900px;
+}
+
+/* 간이일정 내용아이콘 */
+
+.schedule {
+    position: relative;
+}
+
+.schedule > .schedule-ico > .img-box {
+    position: absolute;
+    cursor: pointer;
+    user-select: none;
+}
+
+.schedule > .schedule-ico > .img-box:nth-child(1) {
+    top: 190px;
+    left: 590px;
+}
+
+.schedule > .schedule-ico > .img-box:nth-child(2) {
+    top: 190px;
+    left: 430px;
+}
+
+.schedule > .schedule-ico > .img-box:nth-child(3) {
+    top: 260px;
+    left: 285px;
+}
+
+.schedule > .schedule-ico > .img-box:nth-child(4) {
+    top: 370px;
+    left: 420px;
+}
+
+.schedule > .schedule-ico > .img-box:nth-child(5) {
+    top: 370px;
+    left: 620px;
+}
+
+.schedule > .schedule-ico > .img-box:nth-child(6) {
+    top: 510px;
+    left: 680px;
+}
+
+.schedule > .schedule-ico > .img-box:nth-child(7) {
+    top: 540px;
+    left: 480px;
+}
+
+.schedule > .schedule-ico > .img-box:nth-child(8) {
+    top: 620px;
+    left: 288px;
+}
+
+.schedule > .schedule-ico > .img-box:nth-child(9) {
+    top: 715px;
+    left: 420px;
+}
+
+.schedule > .schedule-ico > .img-box:nth-child(10) {
+    top: 715px;
+    left: 590px;
+}
+
+/* content */
+
+.schedule > .schedule-ico > .img-box::after {
+    content: "";
+    display: block;
+    width: 90px;
+    text-align: center;
+    position: relative;
+    left: -25px;
+    color: white;
+    background-color: rgba(255, 110, 0, 0.7);
+    border-radius: 10px;
+}
+
+.schedule > .schedule-ico > .img-box:nth-child(1)::after {
+    content: "공항도착";
+}
+
+.schedule > .schedule-ico > .img-box:nth-child(2)::after {
+    content: "쇠소깍";
+}
+
+.schedule > .schedule-ico > .img-box:nth-child(3)::after {
+    content: "휴애리 자연 생태 공원";
+}
+
+.schedule > .schedule-ico > .img-box:nth-child(4)::after {
+    content: "테디 베어 뮤지엄";
+}
+
+.schedule > .schedule-ico > .img-box:nth-child(5)::after {
+    content: "테디 베어 뮤지엄";
+}
+
+.schedule > .schedule-ico > .img-box:nth-child(6)::after {
+    content: "한라산";
+}
+
+.schedule > .schedule-ico > .img-box:nth-child(7)::after {
+    content: "섭지 코지";
+}
+
+.schedule > .schedule-ico > .img-box:nth-child(8)::after {
+    content: "일출 랜드";
+}
+
+.schedule > .schedule-ico > .img-box:nth-child(9)::after {
+    content: "함덕 해수욕장";
+    width: 120px;
+    left: -40px;
+}
+
+.schedule > .schedule-ico > .img-box:nth-child(10)::after {
+    content: "공항 출발";
+}
+
+.schedule-ico > .img-box:active > img {
+    transform: translatey(-10%);
+}
+
+.schedule > .schedule-ico > .img-box:nth-child(1):active::after {
+    content: "공항도착 10:00";
+}
+
+.schedule > .schedule-ico > .img-box:nth-child(2):active::after {
+    content: "쇠소깍 13:30";
+}
+
+.schedule > .schedule-ico > .img-box:nth-child(3):active::after {
+    content: "휴애리 자연 생태 공원 16:00";
+}
+
+.schedule > .schedule-ico > .img-box:nth-child(4):active::after {
+    content: "테디 베어 뮤지엄 20:40";
+}
+
+.schedule > .schedule-ico > .img-box:nth-child(5):active::after {
+    content: "테디 베어 뮤지엄 09:40";
+}
+
+.schedule > .schedule-ico > .img-box:nth-child(6):active::after {
+    content: "테디 베어 뮤지엄 13:40";
+}
+
+.schedule > .schedule-ico > .img-box:nth-child(7):active::after {
+    content: "테디 베어 뮤지엄  16:40";
+}
+
+.schedule > .schedule-ico > .img-box:nth-child(8):active::after {
+    content: "테디 베어 뮤지엄 16:40";
+}
+
+.schedule > .schedule-ico > .img-box:nth-child(9):active::after {
+    content: "함덕 해수욕장  16:40";
+}
+
+.schedule > .schedule-ico > .img-box:nth-child(10):active::after {
+    content: "공항 출발 07:40";
+}
+
+.revise {
+    float: right;
+    font-weight: bold;
+    border: 1px solid #e5e5e5;
+    margin-bottom: 20px;
+    position: relative;
+    right: 50%;
+    bottom: 180px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    font-size: 15px;
+    padding: 5px 45px;
+    cursor: pointer;
+}
+
+.revise:hover {
+    color: darkorange;
+}
+
+/* 공통 라이브러리 */
+
+.con {
+    margin: 0 auto;
+}
+
+.block {
+    display: block;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.cell {
+    float: left;
+    box-sizing: border-box;
+}
+
+.relative {
+    position: relative;
+}
+
+.display-none {
+    display: none;
+}
+
+/* 커스텀 */
+
+body {
+    //overflow-x:hidden;
+}
+
+/* 이벤트 메뉴 */
+.ad-box {
+    background-color: #e5e5e5;
+    height: 70px;
+    
+}
+
+.ad-box > .img-box {
+    background-color: darkorange;
+    height: 70px;
+}
+
+.ad-box > .img-box > a {
+    display: block;
+    font-size: 19px;
+    height: 70px;
+    position: relative;
+    top: 30%;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+button > i {
+    color: #222;
+}
+
+button:hover > i {
+    transform: scale(1.2);
+    color: darkorange;
+}
+
+/* 상단 베너 메뉴 */
+.menu-bar {
+    //background-color:#e5e5e5;
+    height: 150px;
+    position: relative;
+}
+
+.menu-bar > .menu-bar-1 {
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+}
+
+.menu-bar > .menu-bar-1 > a > .logo2 {
+    position: absolute;
+    left: 160px;
+    top: -13px;
+}
+
+.menu-bar > .menu-bar-2 {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translatey(-50%);
+}
+
+.menu-bar > .menu-bar-2 > ul > li > a {
+    display: block;
+    padding: 0px 15px;
+    font-size: 15px;
+    color: #555555;
+}
+
+.menu-bar > .menu-bar-2 > ul > li:last-child > a {
+    margin-right: -15px;
+}
+
+/* 장바구니 */
+
+.menu-bar {
+    z-index: 1;
+}
+
+.menu-bar > .menu-bar-2 > ul > li > a.active + .shopping-bag {
+    display: block;
+}
+
+.menu-bar > .menu-bar-2 > ul > li > a + .shopping-bag {
+    position: relative;
+    display: none;
+
+    /*pointer-events: none;*/
+}
+
+.menu-bar > .menu-bar-2 > ul > li > a + .shopping-bag > .priview {
+    position: absolute;
+    top: 10px;
+    left: -50%;
+    transform: translateX(-39%);
+    width: 300px;
+    height: 350px;
+    margin-top: 10px;
+    background-color: #fff;
+    border: 2px solid #e5e5e5e5;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+.menu-bar > .menu-bar-2 > ul > li > a + .shopping-bag > .priview > .priview-i {
+    position: absolute;
+    top: -10px;
+    right: 130px;
+}
+
+.menu-bar > .menu-bar-2 > ul > li > .shopping-bag > .priview {
+    overflow-y: auto;
+}
+
+.menu-bar > .menu-bar-2 > ul > li > .shopping-bag > .priview > .priview-menu > .priview-menu-2 {
+    height: 400px;
+    //background-color:pink;
+}
+
+.menu-bar > .menu-bar-2 > ul > li > .shopping-bag > .priview .priview-menu-2 > ul {
+    padding: 0 20px;
+}
+
+.menu-bar > .menu-bar-2 > ul > li > .shopping-bag > .priview .priview-menu-2 > ul > li {
+    width: 260px;
+    height: 50px;
+    padding: 10px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.menu-bar > .menu-bar-2 > ul > li > .shopping-bag > .priview .priview-menu-2 > ul > li > a {
+    font-size: 13px;
+    display: block;
+    padding-top: 5px;
+    color: #555;
+    font-weight: bold;
+}
+
+.menu-bar > .menu-bar-2 > ul > li > .shopping-bag > .priview .priview-menu-2 > ul > li > a + span {
+    padding-left: 50px;
+    font-size: 13px;
+    color: #555;
+}
+
+.menu-bar > .menu-bar-2 > ul > li > .shopping-bag > .priview > .priview-menu > a {
+    position: relative;
+    height: 60px;
+    display: block;
+    margin-top: -1px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.menu-bar > .menu-bar-2 > ul > li > .shopping-bag > .priview > .priview-menu > a > span {
+    position: absolute;
+    top: 25%;
+    left: 23%;
+    color: darkorange;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/* 해녀 */
+/* 바텀 박스 */
+.bottom-bar {
+    box-sizing: border-box;
+    height: 96px;
+    background-image: url(https://i.ibb.co/QfxRg2Q/Layer-1.png);
+    background-position: center bottom;
+    position: fixed;
+    bottom: 0;
+    transform: translateY(100%);
+    transition: transform 1s 0s;
+    left: 0;
+    width: 100%;
+}
+
+.bottom-bar.active {
+    transition: transform 1s 1s;
+    transform: translateY(0);
+}
+
+.bottom-bar > .img-girl {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%) scale(1);
+    transform-origin: bottom;
+    transition: transform 0.5s 1s;
+    cursor: pointer;
+}
+
+.bottom-bar.active > .img-girl {
+    transform: translateX(-50%) scale(0.6);
+    transition: transform 0.5s 0s;
+}
+
+.bottom-bar > .img-girl > .img-seaweed {
+    position: absolute;
+    bottom: calc(100% - 15px);
+    right: -13px;
+    animation: sea-rotate 2s infinite;
+    transform-origin: bottom center;
+}
+
+@keyframes sea-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(30deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(-30deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.bottom-bar {
+    padding-top: 18px;
+}
+
+.bottom-bar > .menu-box {
+    text-align: center;
+}
+
+.bottom-bar > .menu-box > ul > li > a {
+    display: block;
+    color: #cbcbcb;
+    padding: 5px 15px;
+    transition: transform .3s;
+    font-weight: bold;
+}
+
+.bottom-bar > .menu-box > ul > li:hover > a {
+    text-decoration: underline;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.bottom-bar > .menu-box > ul {
+    display: inline-block;
+}
+
+
+
+/*로그인 버튼*/
+.login-form > .index {
+    width: 360px;
+    background-color:#f1f1f1;
+    height: 580px;
+    padding: 80px 40px;
+    border-radius:10px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    display:none;
+    z-index:2;
+}
+
+.login-form > .index.active {
+    display:block;
+}
+
+.login-form > .index-bg {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.5);
+    z-index:1;
+    display:none;    
+}
+.login-form > .index > h1 {
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.login-form > .index > h2 {
+    text-align:center;
+    margin-top:-50px;
+    margin-bottom:60px;
+}
+
+.login-form > .index > .txtb {
+    border-bottom: 2px solid #adadad;
+    margin:30px 0;
+    position:relative;
+}
+
+.login-form > .index > .txtb input {
+    font-size: 15px;
+    color: #333;
+    border:none;
+    width:100%;
+    outline:none;
+    background:none;
+    padding: 0 5px;
+    height:50px;
+}
+
+.login-form > .index > .txtb span::before {
+    content: attr(data-placeholder);
+    position:absolute;
+    top:50%;
+    left:5px;
+    color:#adadad;
+    transform:translatey(-50%);
+    z-index:-1;
+    transition:.5s;
+}
+.login-form > .index > lo > gin-form.txtb span::after {
+    content:"";
+    position:absolute;
+    width:0%;
+    height:2px;
+    background-color:darkorange;
+    transition: .5s;
+}
+
+.focus + span::before {
+    top:-5px;
+}
+.focus + span::after {
+    width:100%;
+}
+
+.login-form > .index > .logbtn {
+    display:block;
+    width:100%;
+    height:50px;
+    border:none;
+    background-color:darkorange;
+    background-size:200%;
+    color:#fff;
+    outline:none;
+    cursor:pointer;
+    transition: .5s;
+}
+.login-form > .index > .bottom-text {
+    margin-top: 60px;
+    text-align:center;
+    font-size:15px;
+}

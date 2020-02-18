@@ -1,0 +1,87 @@
+.menu-box-1j > ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.menu-box-1j > ul {
+    background-color: orange;
+    text-align: center;
+}
+
+.menu-box-1j > ul > li {
+    float: left;
+    width: 20%;
+}
+
+.menu-box-1j > ul > li > a {
+    color: black;
+    font-weight: bold;
+    padding: 25px;
+    display: block;
+}
+
+.menu-box-1j > ul > li:hover > a {
+    color: whitesmoke;
+}
+
+/* 고객센터 제목 */
+
+h1 {
+    text-align: center;
+    padding-top: 50px;
+    display: block;
+}
+
+/* 고객센터 문의내역 */
+
+.menu-box > .img-box {
+    text-align: center;
+}
+
+.menu-box {
+    height: 1000px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/*검색박스*/
+
+div.con {
+    text-align: right;
+}
+
+.search-box {
+    display: inline-block;
+}
+
+.search-box > input {
+    border: 1px solid #dfdfdf;
+    outline: 0;
+    padding: 10px;
+    padding-right: 35px;
+}
+
+.search-box > input:focus {
+    border-color: black;
+}
+
+.search-box > img {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute-right {
+    position: absolute;
+    right: 0;
+}
+
+.absolute-middle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}

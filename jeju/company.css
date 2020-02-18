@@ -1,0 +1,91 @@
+.menu-box-1j>ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.menu-box-1j>ul {
+    background-color: orange;
+    text-align: center;
+}
+
+.menu-box-1j>ul>li {
+    float: left;
+    width: 20%;
+}
+
+.menu-box-1j>ul>li>a {
+    color: black;
+    font-weight: bold;
+    padding: 25px;
+    display: block;
+}
+
+.menu-box-1j>ul>li:hover>a {
+    color: whitesmoke;
+}
+
+.intro-title {
+    text-align:center;
+    margin-top:70px;
+}
+
+.intro-box-1 .row > .cell {
+    float:left;
+    box-sizing:border-box;
+    font-weight:bold;
+    font-size:0.9rem;
+    margin-top:30px;
+    user-select:none;
+}
+
+.intro-box-1 .row::after {
+    content:"";
+    display:block;
+    clear:both;
+}
+
+.intro-1 > .row > .cell > div:first-child {
+    font-size:1.5rem;
+    padding:20px 50px;
+}
+
+.intro-box-1 .row {
+    text-align:center;
+}
+
+.intro-2 > .row > .cell {
+    padding:0 35px;
+    color:#808080;
+}
+
+.active-on-visible {
+    transform:translateY(50px);
+    opacity:0;
+    transition:transform .5s, opacity .5s;
+}
+
+.active-on-visible.active {
+    opacity:1;
+    transform:translateY(0);
+}
+
+.ico::before {
+    content:"→";
+    font-size:4rem;
+    float:right;
+    width:100%;;
+    margin-top:0;
+    display:block;
+    transition:width .8s;
+}
+
+.ico:hover::before {
+    width:40px;
+}
+
+.ico::after {
+    content:"";
+    display:block;
+    clear:both;
+}

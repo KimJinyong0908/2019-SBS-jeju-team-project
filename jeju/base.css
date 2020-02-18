@@ -1,0 +1,45 @@
+    .season-menu > .row > .cell {
+        width: 25%;
+        margin-top: 30%;
+        transform: translatey(-50%);
+        position: relative;
+        padding: 20px;
+        cursor: pointer;
+    }
+    .season-menu > .row > .cell > .img-box {
+        position: relative;
+    }
+    .season-menu > .row > .cell > .img-box::after {
+        content: "";
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0);
+        top: -10px;
+        left: -10px;
+        right: -10px;
+        bottom: -10px;
+        transition: background-color .4s;
+        border-radius: 50%;
+    }
+    .season-menu > .row > .cell:hover > .img-box::after {
+        background-color: rgba(255, 255, 255, 0.4);
+
+    }
+    .season-menu > .row > .cell > .season-name {
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translatey(-50%);
+        font-weight: bold;
+        font-size: 2.5rem;
+        transition: color .4s;
+    }
+    .season-menu > .row > .cell:hover > .season-name {
+        color: rgba(0,0,0,0.7);
+    }
+    .season-menu > .row > .cell > .img-box > img {
+        transition: transform .3s;
+    }
+    .season-menu > .row > .cell:hover > .img-box > img {
+        transform: scale(1.1);
+    }

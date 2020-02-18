@@ -1,0 +1,88 @@
+.menu-box-1j > ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.menu-box-1j > ul {
+    background-color: orange;
+    text-align: center;
+}
+
+.menu-box-1j > ul > li {
+    float: left;
+    width: 20%;
+}
+
+.menu-box-1j > ul > li > a {
+    color: black;
+    font-weight: bold;
+    padding: 25px;
+    display: block;
+}
+
+.menu-box-1j > ul > li:hover > a {
+    color: whitesmoke;
+}
+
+.menu-box-2.con {
+    text-align: center;
+    width: 400px;
+}
+
+.menu-box-2.con > ul {
+    text-align: left;
+}
+
+.menu-box-2.con > ul > h1 {
+    text-align: center;
+    margin: 60px;
+    user-select: none;
+}
+
+.menu-box-2.con > ul > li {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    user-select: none;
+}
+
+.menu-box-2.con > ul > li::before {
+    content: "· ";
+    font-size: 4rem;
+    color: darkorange;
+    display: inline-block;
+    padding: 0 10px;
+    transform: translateY(15%);
+}
+
+.menu-box-2.con > ul > li:nth-child(6) {
+    position: relative;
+}
+
+.menu-box-2.con > ul .img-box {
+    position: absolute;
+    top: 45%;
+    right: 35%;
+}
+
+
+.revise {
+    float: right;
+    font-weight: bold;
+    border: 1px solid #e5e5e5;
+    right: 500px;
+    margin: 30px 0;
+    position: relative;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    font-size: 15px;
+    padding: 5px 45px;
+    cursor: pointer;
+}
+
+.revise:hover {
+    color: darkorange;
+}
